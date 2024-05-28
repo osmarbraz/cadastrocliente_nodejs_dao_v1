@@ -14,7 +14,7 @@ class ClienteDAO extends DAO {
      * @returns uma lista.
      */
     getLista() {
-        const sql = 'SELECT * FROM CLIENTE';
+        const sql = 'SELECT * FROM cliente';
         const params = [];
 
         return this.all(sql, params);
@@ -27,7 +27,7 @@ class ClienteDAO extends DAO {
      * @returns Os dados do cliente.
      */
     getCliente(clienteId){
-        const sql = 'SELECT * FROM CLIENTE WHERE ClienteId = ?';
+        const sql = 'SELECT * FROM cliente WHERE clienteId = ?';
         const params = [clienteId];
 
         return this.each(sql, params);
@@ -42,7 +42,7 @@ class ClienteDAO extends DAO {
      * @returns 
      */
     inserir(clienteId, nome, cpf){
-        const sql = 'INSERT INTO CLIENTE (clienteId, nome, cpf) VALUES (?, ?, ?)';
+        const sql = 'INSERT INTO cliente (clienteId, nome, cpf) VALUES (?, ?, ?)';
         const params =  [clienteId, nome, cpf];
 
         return this.run(sql, params);
@@ -57,7 +57,7 @@ class ClienteDAO extends DAO {
      * @returns 
      */
     alterar(clienteId, nome, cpf){
-        const sql = 'UPDATE CLIENTE SET nome = ?, cpf = ? WHERE clienteId = ?';
+        const sql = 'UPDATE cliente SET nome = ?, cpf = ? WHERE clienteId = ?';
         const params = [nome, cpf, clienteId];
 
         return this.run(sql, params);
@@ -70,7 +70,7 @@ class ClienteDAO extends DAO {
      * @returns 
      */
     excluir(clienteId){        
-        const sql = 'DELETE FROM CLIENTE WHERE clienteId = ?';
+        const sql = 'DELETE FROM cliente WHERE clienteId = ?';
         const params = [clienteId];
 
         return this.run(sql, params);

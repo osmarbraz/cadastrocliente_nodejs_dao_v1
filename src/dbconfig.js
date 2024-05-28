@@ -32,11 +32,11 @@ function createDbConnection() {
  */
 function createTable(db) {
     db.exec(`
-    create table IF NOT EXISTS CLIENTE (
-            clienteId integer, 
-            nome varchar(100), 
-            cpf varchar(11), 
-            CONSTRAINT PK_CLIENTE PRIMARY KEY (clienteId));
+    CREATE TABLE IF NOT EXISTS cliente (
+            clienteId INTEGER, 
+            nome VARCHAR(100), 
+            cpf VARCHAR(11), 
+            CONSTRAINT pk_cliente PRIMARY KEY (clienteId));
      `);
   }
 
