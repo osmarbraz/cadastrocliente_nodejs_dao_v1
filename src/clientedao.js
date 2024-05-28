@@ -14,7 +14,7 @@ class ClienteDAO extends DAO {
      * @returns uma lista.
      */
     getLista() {
-        const sql = 'SELECT * FROM cliente';
+        const sql = 'SELECT * FROM CLIENTE';
         const params = [];
 
         return this.all(sql, params);
