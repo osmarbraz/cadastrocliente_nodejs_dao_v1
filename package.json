@@ -1,5 +1,5 @@
 {
-  "name": "cadastrocliente_nodejs_v1",
+  "name": "cadastrocliente_nodejs_dao_v1",
   "version": "1.0.0",
   "description": "Cliente CRUD NodeJS v1",
   "main": ".\\src\\index",
