@@ -11,8 +11,9 @@
 
 ## Dependências
 
-- express,
 - cors,
+- express,
+- sequelize,
 - sqlite3.
 
 ## Execução
